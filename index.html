@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Um bot que irá moderar e deixar a sua comunidade segura de um jeito fácil!">
+  <title>Lu Bot - Modere a sua comunidade do Discord</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <header class="cabecalho">
+    <img class="cabecalho-imagem" src="icons/robot-logo.png" alt="Logo da comunidade Ballerini">
+    <nav class="cabecalho-menu">
+      <a class="cabecalho-menu-item">Projetos</a>
+      <a class="cabecalho-menu-item">Home</a>
+      <a class="cabecalho-menu-item">Tutorial</a>
+      <a class="cabecalho-menu-item">Saiba Mais</a>
+    </nav>
+  </header>
+
+  <main class="conteudo">
+    <section class="conteudo-principal">
+      <div class="conteudo-principal-escrito">
+        <h1 class="conteudo-principal-escrito-titulo">Lu Bot</h1>
+        <h2 class="conteudo-principal-escrito-subtitulo">Deixe a sua comunidade segura de um jeito fácil</h2>
+        <button class="conteudo-principal-escrito-botao">Me adicione!</button>
+      </div>
+      <img class="conteudo-principal-imagem" src="icons/robot.png" alt="Imagem da Balle Bot">
+    </section>
+
+    <section class="conteudo-secundario">
+      <h3 class="conteudo-secundario-titulo">O que ele faz por você?</h3>
+      <p class="conteudo-secundario-paragrafo">1. Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.</p>
+      <p class="conteudo-secundario-paragrafo">2. Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.</p>
+      <p class="conteudo-secundario-paragrafo">3. Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.</p>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <img class="rodape-imagem" src="icons/236.jpg">
+    <a class="rodape-referencia" href="https://github.com/rafaballerini/LandingPage">Referência do projeto - Rafaela Ballerini</a>
+</footer>
+
+<script>
+    window.watsonAssistantChatOptions = {
+        integrationID: "84b51f0d-15a8-49b4-b280-239cc9e543d9", // The ID of this integration.
+        region: "us-south", // The region your integration is hosted in.
+        serviceInstanceID: "35fa0a5a-ff96-4e68-832f-ef8e3b77f4bd", // The ID of your service instance.
+        onLoad: function(instance) { instance.render(); }
+      };
+    setTimeout(function(){
+      const t=document.createElement('script');
+      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js"
+      document.head.appendChild(t);
+    });
+  </script>
+</body>
+
+</html>
